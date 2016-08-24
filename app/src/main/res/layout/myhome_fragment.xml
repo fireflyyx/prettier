@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.neo.http.prettier.viewpager.CombinationViewPage
+                    android:id="@+id/myhome_fragment_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="button"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:id="@+id/kanriji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="button"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:id="@+id/zhaoyisheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="button"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:id="@+id/zhaojigou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+                <TextView
+                    android:text="button"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:id="@+id/chabaike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"/>
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#3efde7"
+                app:tabSelectedTextColor="#73fdfd"
+                app:tabTextColor="#000"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/myhome_fragment_viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="#ff0"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
